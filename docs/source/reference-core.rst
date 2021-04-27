@@ -43,8 +43,8 @@ When writing Trio code, you need to keep track of where your
 checkpoints are. Why? First, because checkpoints require extra
 scrutiny: whenever you execute a checkpoint, you need to be prepared
 to handle a :exc:`Cancelled` error, or for another task to run and
-`rearrange some state out from under you
-<https://glyph.twistedmatrix.com/2014/02/unyielding.html>`__. And
+:hoverxref:`rearrange some state out from under you
+<hoverxref:https://glyph.twistedmatrix.com/2014/02/unyielding.html>`. And
 second, because you also need to make sure that you have *enough*
 checkpoints: if your code doesn't pass through a checkpoint on a
 regular basis, then it will be slow to notice and respond to

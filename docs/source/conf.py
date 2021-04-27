@@ -81,6 +81,7 @@ extensions = [
     'sphinx.ext.coverage',
     'sphinx.ext.napoleon',
     'sphinxcontrib_trio',
+    'hoverxref.extension',
     'local_customization',
 ]
 
